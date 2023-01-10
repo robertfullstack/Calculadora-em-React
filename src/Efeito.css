@@ -1,0 +1,44 @@
+@keyframes effect-degrade-button {
+    0% {
+        background-position: 0 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 50% 0;
+    }
+}
+
+@keyframes effect-degrade-body {
+    0% {
+        background-position: 0 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 50% 0;
+    }
+}
+
+div {
+    margin: auto;
+}
+
+.efeito button {
+    background: linear-gradient(-45deg, red, blue, red, blue) no-repeat;
+    background-size: 300%;
+    animation: effect-degrade-button 8s ease infinite;
+}
+
+body {
+    background: linear-gradient(-45deg, red, blue, red, blue) no-repeat;
+    background-size: 500%;
+    animation: effect-degrade-button 10s ease infinite;
+    height: 100vh;
+}
